@@ -48,7 +48,7 @@
 
 				foreach (string[] name in isolatedNames) {
 					foreach (string pair in name) {
-						string letter = pair[0].ToString();
+						string letter = pair[0].ToString().ToUpper();
 						int level = int.Parse(pair.Substring(1));
 						DecodedName += Decode(letter, level);
 					}
