@@ -53,8 +53,8 @@ This will launch the console interface, allowing you to interact with the Galati
 
 ## Encoding/Decoding Information
 Each artifact name is encoded, and you must create a recursive function to decode it. The encoding scheme is as follows: 
-  **Original array**: {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'}
-  **Mapped array**: {'H', 'Z', 'A', 'U', 'Y', 'E', 'K', 'G', 'O', 'T', 'I', 'R', 'J', 'V', 'W', 'N', 'M', 'F', 'Q', 'S', 'D', 'B', 'X', 'L', 'C', 'P'}
+  - **Original array**: {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'}
+  - **Mapped array**: {'H', 'Z', 'A', 'U', 'Y', 'E', 'K', 'G', 'O', 'T', 'I', 'R', 'J', 'V', 'W', 'N', 'M', 'F', 'Q', 'S', 'D', 'B', 'X', 'L', 'C', 'P'}
 #### Encoding Details:
 - Each encoded name contains characters followed by numbers indicating encoding levels (e.g., "A3" means character 'A' with encoding level 3).
 - When the encoding level reaches 1 and goes to 0, the function directly maps the character using a reverse alphabet mapping. For example, 'A' becomes 'Z', 'B' becomes 'Y', and so on. 
